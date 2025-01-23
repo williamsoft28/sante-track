@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prendre un RDV - SantéTrack</title>
+    <link rel="stylesheet" href="rdv.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SantéTrack</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="service.html">Nos Services</a></li>
+                <li><a href="rdv.html" class="active">Prendre RDV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="rdv-form">
+        <h1>Prendre un Rendez-vous</h1>
+        <form action="" method="post">
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom complet" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Votre numéro de téléphone" required>
+
+            <label for="date">Date souhaitée</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Heure souhaitée</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="type">Type de rendez-vous</label>
+            <select id="type" name="type">
+                <option value="generaliste">Médecin généraliste</option>
+                <option value="specialiste">Spécialiste</option>
+                <option value="autre">Autre</option>
+            </select>
+
+            <label for="message">Message (optionnel)</label>
+            <textarea id="message" name="message" rows="5" placeholder="Expliquez votre besoin"></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+</body>
+</html>
